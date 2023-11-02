@@ -5,10 +5,13 @@
    * colors
    */
 
-  --safety-orange: hsl(25, 100%, 50%);
+  /* --safety-orange: hsl(25, 100%, 50%); */
+  --safety-orange : #00b4d8;
   --lavender-gray: hsl(230, 19%, 81%);
-  --persian-rose: hsl(328, 100%, 59%);
-  --red-crayola: hsl(341, 100%, 49%);
+  /* --persian-rose: hsl(328, 100%, 59%); */
+  --persian-rose: #03045e;
+  /* --red-crayola: hsl(341, 100%, 49%); */
+  --red-crayola: #00b4d8;
   --eerie-black: hsl(240, 6%, 10%);
   --light-gray: hsl(0, 0%, 80%);
   --cultured-2: hsl(210, 60%, 98%);
@@ -354,7 +357,7 @@ body {
   align-content: center;
 }
 
-.imgwhy img {
+.why img {
   height: 100%;
   width:100%;
 }
@@ -363,6 +366,25 @@ body {
   margin-top: 50px;
   margin-right: 50px;
 }
+
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.why {
+  /* background-color: #3498db; */
+  /* color: white; */
+  padding: 20px;
+  text-align: center;
+}
+
+#textwhy {
+  padding-top: 100px;
+}
+
 
 
 
@@ -563,7 +585,7 @@ body {
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
-
+/* 
 .blog .section-text { margin-block: 5px 35px; }
 
 .blog-card { background-color: var(--white-2); }
@@ -585,7 +607,7 @@ body {
 
 .blog-card .card-title { transition: var(--transition-1); }
 
-.blog-card .card-title:is(:hover, :focus) { color: var(--red-crayola); }
+.blog-card .card-title:is(:hover, :focus) { color: var(--red-crayola); } */
 
 
 /* #CONTACT */
@@ -760,6 +782,10 @@ textarea.input-field {
   /**
    * REUSED STYLE
    */
+
+   #textwhy {
+    padding-top: 20px;
+  }
 
   .container {
     max-width: 540px;
